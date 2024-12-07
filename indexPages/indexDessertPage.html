@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dessert - Cook & Click</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../stylesPages/stylesDessertPage.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light px-3 custom-navbar">
+      <div class="container-fluid">
+        <a class="fw-bold custom-title" href="./indexHomePage.html"
+          >Cook & Click
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./indexHealthyPage.html"
+                >Healthy
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./indexDessertPage.html">Dessert</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./indexDrinkPage.html"
+                >Drink</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./indexPastaPage.html"
+                >Pasta</a
+              >
+            </li>
+          </ul>
+          <div class="autocomplete">
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="search-input"
+              />
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+            <div id="autocomplete-suggestions" class="autocomplete-box"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Recipe Title and Image -->
+    <div class="container my-4">
+      <div class="text-center">
+        <h2 class="recipe-title">Treacle tart</h2>
+        <img
+          src="../images/treacle-tart-6ed628f.webp"
+          alt="Recipe Image"
+          class="img-fluid rounded my-3"
+        />
+        <p>
+          <img
+            class="custom-icons"
+            src="../icons/icons8-clock-50 1.png"
+          /><strong class="custom-text"> 1h 5 min</strong> |
+          <img class="custom-icons" src="../icons/icons8-plate-32 1.png" />
+          <strong class="custom-text">Serves 10</strong>
+        </p>
+        <p class="custom-description">
+          Treat family and friends to a comforting treacle tart with crumbly
+          pastry and rich filling. A classic British dessert, serve with ice
+          cream or clotted cream.
+        </p>
+
+        <div class="text-center">
+          <button id="mark-done-button" class="btn btn-success">
+            Mark as done
+          </button>
+        </div>
+        <div class="text-center mt-2 mb-5">
+          <p class="fs-4" id="timer-display">00:00</p>
+          <button id="start-timer" class="btn btn-primary">Start Timer</button>
+          <button id="pause-timer" class="btn btn-warning" disabled>
+            Pause
+          </button>
+          <button id="reset-timer" class="btn btn-danger">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ingredients and Method -->
+    <div class="container my-4">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="method">
+            <h3>Method</h3>
+            <p>
+              Sieve the flour and salt into a large bowl. Add the butter and rub
+              together with your fingers to a fine breadcrumb-like texture (you
+              can also do this part in a food processor). Stir though the icing
+              sugar, then quickly add the egg yolks and 2 tbsp water, mixing
+              swiftly with a cutlery knife to combine. Form into a ball (add
+              another tbsp water if you need to), wrap and chill for 30 mins.
+              Roll out to the thickness of a pound coin, and line a 22cm fluted
+              tart tin with the pastry, leaving an overhang. Return to the
+              fridge for 30 mins.
+            </p>
+            <p>
+              Heat the oven to 200C/180C fan/gas 6. Put a baking sheet into the
+              oven to heat up. Line the pastry case with baking parchment and
+              baking beans, then put in the oven on the baking sheet, and bake
+              for 15 mins. Remove the parchment and bake for a further 10 mins
+              or until the pastry is golden brown.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>250g plain flour</li>
+              <li>140g cold unsalted butter</li>
+              <li>3 tbsp icing sugar</li>
+              <li>2 medium egg yolks</li>
+              <li>2-3 tbsp cold water</li>
+              <li>400g golden syrup</li>
+              <li>1 ball stem ginger</li>
+              <li>1 lemon</li>
+              <li>2 medium eggs</li>
+              <li>100g fine fresh white breadcrumbs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="text-center text-md-start py-3">
+      <div
+        class="container my-4 d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <span class="custom-font-Inria">Click here to leave your recipe</span>
+        <span class="custom-font-Italiana">Cook & Click</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <script src="../scripts/scriptDessertPage.js"></script>
+</html>

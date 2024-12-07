@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&display=swap");
+
+body {
+  background-color: #ffefb7;
+
+  && .custom-navbar {
+    background-color: #e6d8a4;
+    && .custom-title {
+      font-family: "Italiana", sans-serif;
+      color: #a68a64;
+      font-size: 30px;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Ajuste das imagens para telas desktop (>= 992px) */
+@media (min-width: 992px) {
+  .custom-image {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.autocomplete-box {
+  border: 1px solid #ccc;
+  background: white;
+  position: absolute;
+  z-index: 1000;
+  width: calc(20% - 50px); /* Largura padrão para desktops */
+  max-height: 150px;
+  overflow-y: auto;
+  display: none; /* Inicialmente escondido */
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.custom-image {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o cursor sobre a imagem */
+.custom-image:hover {
+  transform: scale(1.1); /* Aumenta o tamanho */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+  opacity: 0.9; /* Leve transparência */
+}
+
+/* Efeito ao clicar */
+.custom-image:active {
+  transform: scale(0.95); /* Reduz levemente o tamanho */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Reduz a sombra */
+  opacity: 0.8; /* Mais transparência */
+}
+
+footer {
+  background-color: #e6d8a4;
+
+  && .custom-font-Inria {
+    font-family: "Inria Sans", sans-serif;
+    color: #a68a64;
+    font-size: 20px;
+  }
+  && .custom-font-Italiana {
+    font-family: "Italiana", sans-serif;
+    color: #a68a64;
+    font-size: 30px;
+  }
+}

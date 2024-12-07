@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasta - Cook & Click</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../stylesPages/stylesPastaPage.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light px-3 custom-navbar">
+      <div class="container-fluid">
+        <a class="fw-bold custom-title" href="./indexHomePage.html"
+          >Cook & Click</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./indexHealthyPage.html">Healthy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./indexDessertPage.html">Dessert</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./indexDrinkPage.html">Drink</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./indexPastaPage.html">Pasta</a>
+            </li>
+          </ul>
+          <div class="autocomplete">
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="search-input"
+              />
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+            <div id="autocomplete-suggestions" class="autocomplete-box"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Recipe Title and Image -->
+    <div class="container my-4">
+      <div class="text-center">
+        <h2 class="recipe-title">Chicken & bacon pasta</h2>
+        <img
+          src="../images/Chicken-and-bacon-pasta-acac96f.webp"
+          alt="Recipe Image"
+          class="img-fluid rounded my-3"
+        />
+        <p>
+          <img
+            class="custom-icons"
+            src="../icons/icons8-clock-50 1.png"
+          /><strong class="custom-text"> 40 min</strong> |
+          <img class="custom-icons" src="../icons/icons8-plate-32 1.png" />
+          <strong class="custom-text">Serves 4</strong>
+        </p>
+        <p class="custom-description">
+          Toss chicken and bacon with ribbons of tagliatelle in a deliciously
+          creamy sauce to make this easy pasta dish. Serve with a green salad
+          for an easy supper
+        </p>
+
+        <div class="text-center">
+          <button id="mark-done-button" class="btn btn-success">
+            Mark as done
+          </button>
+        </div>
+        <div class="text-center mt-2 mb-5">
+          <p class="fs-4" id="timer-display">00:00</p>
+          <button id="start-timer" class="btn btn-primary">Start Timer</button>
+          <button id="pause-timer" class="btn btn-warning" disabled>
+            Pause
+          </button>
+          <button id="reset-timer" class="btn btn-danger">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ingredients and Method -->
+    <div class="container my-4">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="method">
+            <h3>Method</h3>
+            <p>
+              Heat the oil and butter in a medium saucepan over a low heat and
+              fry the onion for 10 mins, or until softened and translucent. Add
+              the garlic and cook for 2 mins more. Add the cream, mascarpone,
+              parmesan and stock cube. Give it a stir and add the cooked chicken
+              and bacon to heat through.Meanwhile, cook the pasta following pack
+              instructions.
+            </p>
+            <p>
+              Reserve 100ml of the pasta water. Toss the pasta in the creamy
+              sauce and enough of the reserved water to loosen. Season with
+              black pepper. Top with the parsley and serve with a green salad.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>2 tbsp olive oil</li>
+              <li>1 tbsp butter</li>
+              <li>1 onion</li>
+              <li>1 large garlic clove</li>
+              <li>200ml double cream</li>
+              <li>100g mascarpone</li>
+              <li>75g parmesan</li>
+              <li>1 chicken stock cube</li>
+              <li>2 cooked chicken breasts</li>
+              <li>8 rashers cooked streaky bacon</li>
+              <li>300g tagliatelle</li>
+              <li>¼ small bunch of parsley</li>
+              <li>green salad</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="text-center text-md-start py-3">
+      <div
+        class="container my-4 d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <span class="custom-font-Inria">Click here to leave your recipe</span>
+        <span class="custom-font-Italiana">Cook & Click</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+  <script src="../scripts/scriptPastaPage.js"></script>
+</html>

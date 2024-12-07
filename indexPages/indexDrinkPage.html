@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drink - Cook & Click</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../stylesPages/stylesDrinkPage.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light px-3 custom-navbar">
+      <div class="container-fluid">
+        <a class="fw-bold custom-title" href="./indexHomePage.html"
+          >Cook & Click</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./indexHealthyPage.html">Healthy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./indexDessertPage.html">Dessert</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./indexDrinkPage.html">Drink</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./indexPastaPage.html">Pasta</a>
+            </li>
+          </ul>
+          <div class="autocomplete">
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="search-input"
+              />
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+            <div id="autocomplete-suggestions" class="autocomplete-box"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Recipe Title and Image -->
+    <div class="container my-4">
+      <div class="text-center">
+        <h2 class="recipe-title">Strawberry daiquiri</h2>
+        <img
+          src="../images/frozen-strawbz-329b8e5.webp"
+          alt="Recipe Image"
+          class="img-fluid rounded my-3"
+        />
+        <p>
+          <img
+            class="custom-icons"
+            src="../icons/icons8-clock-50 1.png"
+          /><strong class="custom-text"> 10 min</strong> |
+          <img class="custom-icons" src="../icons/icons8-plate-32 1.png" />
+          <strong class="custom-text">Serves 2</strong>
+        </p>
+        <p class="custom-description">
+          This slushy cocktail is best made when strawberries are in season.
+          With just four ingredients you can whip up this frozen strawberry
+          daiquiri in 10 minutes.
+        </p>
+
+        <div class="text-center">
+          <button id="mark-done-button" class="btn btn-success">
+            Mark as done
+          </button>
+        </div>
+        <div class="text-center mt-2 mb-5">
+          <p class="fs-4" id="timer-display">00:00</p>
+          <button id="start-timer" class="btn btn-primary">Start Timer</button>
+          <button id="pause-timer" class="btn btn-warning" disabled>
+            Pause
+          </button>
+          <button id="reset-timer" class="btn btn-danger">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ingredients and Method -->
+    <div class="container my-4">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <div class="method">
+            <h3>Method</h3>
+            <p>
+              Blend the strawberries then push the resulting puree through a
+              sieve to remove some of the seeds. Tip the sieved puree into the
+              blender again and add the ice, rum, 1-2 tbsp sugar syrup depending
+              on how sweet you like your drinks and lime juice. Blend again and
+              divide the mixture between 2 Martini glasses.
+            </p>
+            <p>
+              Thread the lime slices and strawberry halves onto the cocktail
+              sticks and place onto the edge of the glass, serve immediately.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>500g strawberries</li>
+              <li>100ml rum</li>
+              <li>juice 1/2 lime</li>
+              <li>1-2 tbsp sugar syrup</li>
+              <li>2 slices of limesr</li>
+              <li>1 strawberry</li>
+              <li>2 cocktail sticks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="text-center text-md-start py-3">
+      <div
+        class="container my-4 d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <span class="custom-font-Inria">Click here to leave your recipe</span>
+        <span class="custom-font-Italiana">Cook & Click</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <script src="../scripts/scriptDrinkPage.js"></script>
+</html>
